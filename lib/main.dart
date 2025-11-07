@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:splash_screen/Screen/splash_screen1.dart';
-import 'package:splash_screen/Screen/splash_screen1.dart';
+
 
 void main() {
-  runApp(const MyApp()); // <- ini yang jalanin aplikasi
+  runApp(const MyApp()); 
 }
 
 
@@ -19,7 +19,6 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
-    home: const Screen1(),
     );
   }
 }
