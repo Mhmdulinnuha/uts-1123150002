@@ -81,7 +81,35 @@ class Screen1 extends StatelessWidget {
             ),  
 
             const Spacer(),
-              
+
+             Container(
+              margin: const EdgeInsets.symmetric(horizontal: 40),
+              child: SizedBox(
+                width: double.infinity,
+                height: 45,
+                child: ElevatedButton(
+                  onPressed: () {
+        
+                  },
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFF84a98c),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                  child: const Text(
+                    "Continue",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 14,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+
+
           ],
         ),
       ),
