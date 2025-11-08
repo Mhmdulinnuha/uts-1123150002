@@ -78,7 +78,10 @@ class Screen1 extends StatelessWidget {
                   ),
                 ),
               ],
-            ),    
+            ),  
+
+            const Spacer(),
+              
           ],
         ),
       ),
