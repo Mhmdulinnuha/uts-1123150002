@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:splash_screen/screen/login.dart';
 
 
-
-class Screen2 extends StatelessWidget {
-  const Screen2({super.key});
+class Screen3 extends StatelessWidget {
+  const Screen3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +20,13 @@ class Screen2 extends StatelessWidget {
               height: 250,
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.blueAccent, // contoh warna latar
+                image: DecorationImage(
+                  image: AssetImage("assets/images/welcome1.png"),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
+
 
             const SizedBox(height: 20),
 
@@ -38,7 +42,7 @@ class Screen2 extends StatelessWidget {
             const SizedBox(height: 20),
 
             const Text(
-              "Forgot to bring your wallet \nwhen you are shopping?",
+              "Let's try Wallie now! \n And get the best solution",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 12.0,
@@ -91,7 +95,12 @@ class Screen2 extends StatelessWidget {
                 height: 45,
                 child: ElevatedButton(
                   onPressed: () {
-                    
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Login(),
+                      ),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF84a98c),

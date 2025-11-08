@@ -21,9 +21,13 @@ class Screen1 extends StatelessWidget {
               height: 250,
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.blueAccent, // contoh warna latar
+                image: DecorationImage(
+                  image: AssetImage("assets/images/welcome.png"),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
+
 
             const SizedBox(height: 20),
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:splash_screen/screen/splash_screen3.dart';
+import 'package:splash_screen/Screen/splash_screen3.dart';
+
 
 
 
@@ -21,9 +22,13 @@ class Screen2 extends StatelessWidget {
               height: 250,
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.blueAccent, // contoh warna latar
+                image: DecorationImage(
+                  image: AssetImage("assets/images/welcome2.png"),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
+
 
             const SizedBox(height: 20),
 
@@ -39,7 +44,7 @@ class Screen2 extends StatelessWidget {
             const SizedBox(height: 20),
 
             const Text(
-              "Forgot to bring your wallet \nwhen you are shopping?",
+              "Dont worry! we got you cover. \n Use wallie instead of cash",
               textAlign: TextAlign.center,
               style: TextStyle(
                 fontSize: 12.0,
@@ -95,7 +100,7 @@ class Screen2 extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const Screen3(),
+                        builder: (context) => Screen3(),
                       ),
                     );
                   },
