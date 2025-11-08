@@ -12,13 +12,24 @@ class Screen1 extends StatelessWidget {
           children: [
             const SizedBox(height: 60), 
 
-            // 🟢 Gambar utama berbentuk lingkaran
+            
             Container(
               width: 250,
               height: 250,
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 color: Colors.blueAccent, // contoh warna latar
+              ),
+            ),
+
+            const SizedBox(height: 20),
+
+            const Text(
+              "Welcome",
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.normal,
+                color: Colors.black,
               ),
             ),
 
