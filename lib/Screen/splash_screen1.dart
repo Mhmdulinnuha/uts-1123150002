@@ -89,7 +89,7 @@ class Screen1 extends StatelessWidget {
                 height: 45,
                 child: ElevatedButton(
                   onPressed: () {
-        
+                    
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF84a98c),
@@ -109,7 +109,8 @@ class Screen1 extends StatelessWidget {
               ),
             ),
 
-
+            const SizedBox(height: 70),
+            
           ],
         ),
       ),
