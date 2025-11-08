@@ -34,6 +34,16 @@ class Screen1 extends StatelessWidget {
             ),
 
             const SizedBox(height: 20),
+
+            const Text(
+              "Forgot to bring your wallet \nwhen you are shopping?",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 12.0,
+                color: Colors.green,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ],
         ),
       ),
