@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:splash_screen/Screen/splash_screen2.dart';
 
 
 
-class Screen1 extends StatelessWidget {
-  const Screen1({super.key});
+class Screen2 extends StatelessWidget {
+  const Screen2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -59,7 +58,7 @@ class Screen1 extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(horizontal: 4),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFF84a98c), // aktif
+                    color: Color(0xFFedede9),  // aktif
                   ),
                 ),
                 Container(
@@ -68,7 +67,7 @@ class Screen1 extends StatelessWidget {
                   margin: const EdgeInsets.symmetric(horizontal: 4),
                   decoration: const BoxDecoration(
                     shape: BoxShape.circle,
-                    color: Color(0xFFedede9), // nonaktif
+                    color: Color(0xFF84a98c),// nonaktif
                   ),
                 ),
                 Container(
@@ -92,12 +91,7 @@ class Screen1 extends StatelessWidget {
                 height: 45,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => Screen2(),
-                      ),
-                    );
+                    
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF84a98c),
@@ -125,5 +119,3 @@ class Screen1 extends StatelessWidget {
     );
   }
 }
-
-

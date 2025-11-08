@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:splash_screen/screen/splash_screen3.dart';
 
 
-class Screen1 extends StatelessWidget {
-  const Screen1({super.key});
+
+class Screen2 extends StatelessWidget {
+  const Screen2({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -90,7 +92,12 @@ class Screen1 extends StatelessWidget {
                 height: 45,
                 child: ElevatedButton(
                   onPressed: () {
-                    
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Screen3(),
+                      ),
+                    );
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF84a98c),
