@@ -44,6 +44,41 @@ class Screen1 extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
+
+            const SizedBox(height: 5),
+
+             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Container(
+                  width: 10,
+                  height: 10,
+                  margin: const EdgeInsets.symmetric(horizontal: 4),
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFF84a98c), // aktif
+                  ),
+                ),
+                Container(
+                  width: 10,
+                  height: 10,
+                  margin: const EdgeInsets.symmetric(horizontal: 4),
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFFedede9), // nonaktif
+                  ),
+                ),
+                Container(
+                  width: 10,
+                  height: 10,
+                  margin: const EdgeInsets.symmetric(horizontal: 4),
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Color(0xFFedede9), // nonaktif
+                  ),
+                ),
+              ],
+            ),    
           ],
         ),
       ),
